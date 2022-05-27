@@ -4,13 +4,39 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="1200" maxWidth="1200" minHeight="546.0" minWidth="673.0" prefHeight="546.0" prefWidth="673.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
 <children>
-   <Button fx:id="btnMain" layoutX="238.0" layoutY="177.0" mnemonicParsing="false" onAction="#onBtnAction" prefHeight="47.0" prefWidth="125.0" style="-fx-background-color: black;" text="Kliknij mnie!" textFill="RED">
+   <Button fx:id="btnMain" layoutX="258.0" layoutY="328.0" mnemonicParsing="false" onAction="#onBtnAction" prefHeight="47.0" prefWidth="125.0" style="-fx-background-color: black;" text="Oblicz!" textFill="RED">
       <font>
          <Font size="16.0" />
       </font>
    </Button>
-   <TextField fx:id="txtLicznik" layoutX="226.0" layoutY="234.0" />
+   <TextField fx:id="grubosc" layoutX="247.0" layoutY="288.0" />
+   <TextField fx:id="wysokosc" layoutX="247.0" layoutY="243.0" />
+   <TextField fx:id="promien" layoutX="247.0" layoutY="203.0" />
+   <Text fill="#fcfcfc" layoutX="185.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Promień" wrappingWidth="53.13671875">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <Text fill="#fcfcfc" layoutX="179.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wysokość" wrappingWidth="66.13671875">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <Text fill="#fcfcfc" layoutX="130.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grubość blachy" wrappingWidth="109.13671875">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <Text fill="#fcfcfc" layoutX="41.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wynik obliczeń:" wrappingWidth="72.13671875">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Text>
+   <Label fx:id="wynik" layoutX="113.0" layoutY="392.0" prefHeight="103.0" prefWidth="625.0" textFill="white">
+      <font>
+         <Font size="16.0" />
+      </font></Label>
 </children>
 </AnchorPane>
