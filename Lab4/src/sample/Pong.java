@@ -57,7 +57,7 @@ private static final int LICZBAKULEK = 10;
                     lott.nextDouble()*ARENAWIDTH+ARENAX1,
                     lott.nextDouble()*ARENAHEIGHT+ARENAY1,
                     5+lott.nextDouble()*20,
-                    5+lott.nextDouble()*20);
+                    5+lott.nextDouble()*20, Color.WHITESMOKE);
     }
 
         private void run (GraphicsContext gc){

@@ -11,7 +11,7 @@ public class Kulka {
     private double yPos;
     private Color color;
 
-    Kulka (double xPos, double yPos, double xSpeed, double ySpeed){
+    Kulka(double xPos, double yPos, double xSpeed, double ySpeed, Color whitesmoke){
         this.xPos = xPos;
         this.yPos = yPos;
         this.xSpeed = xSpeed;
