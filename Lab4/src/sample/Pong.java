@@ -24,11 +24,6 @@ public class Pong extends Application {
     private static final double ARENAY1 = MARGIN;
     private static final double ARENAX2 = ARENAX1 + ARENAWIDTH;
     private static final double ARENAY2 = ARENAY1 + ARENAHEIGHT;
-//    private double x = ARENAX1 + ARENAWIDTH/2;
-//    private double y = ARENAY1 + ARENAHEIGHT/2;
-//    private Random lott = new Random();
-//    private double vx = 5+lott.nextDouble()*20;
-//    private double vy = 5+lott.nextDouble()*20;
 private static final int LICZBAKULEK = 10;
     private double[] x = new double[LICZBAKULEK];
     private double[] y = new double[LICZBAKULEK];
@@ -50,14 +45,27 @@ private static final int LICZBAKULEK = 10;
         t.play();
     }
 
-    private void initKule(){
+    private void initKule() {
         Random lott = new Random();
-        for (int i =0; i <LICZBAKULEK; i++)
+        for (int i = 0; i < LICZBAKULEK / 2; i++) {
             kulki[i] = new Kulka(
-                    lott.nextDouble()*ARENAWIDTH+ARENAX1,
-                    lott.nextDouble()*ARENAHEIGHT+ARENAY1,
-                    5+lott.nextDouble()*20,
-                    5+lott.nextDouble()*20, Color.WHITESMOKE);
+                    lott.nextDouble() * ARENAWIDTH + ARENAX1,
+                    lott.nextDouble() * ARENAHEIGHT + ARENAY1,
+                    5 + lott.nextDouble() * 20,
+                    5 + lott.nextDouble() * 20,
+                    Color.WHITESMOKE);
+        }
+        for (int i = 5; i < LICZBAKULEK; i++) {
+            kulki[i] = new Rugby(
+                    lott.nextDouble() * ARENAWIDTH + ARENAX1,
+                    lott.nextDouble() * ARENAHEIGHT + ARENAY1,
+                    5 + lott.nextDouble() * 20,
+                    5 + lott.nextDouble() * 20,
+                    10,
+                    15
+
+            );
+        }
     }
 
         private void run (GraphicsContext gc){
