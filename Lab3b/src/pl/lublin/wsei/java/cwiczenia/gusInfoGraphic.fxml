@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.lublin.wsei.java.cwiczenia.Controller">
     <children>
         <Button fx:id="btn" layoutX="57.0" layoutY="94.0" mnemonicParsing="false" onAction="#btnOpenFileAction" text="Otwórz plik" />
         <Label fx:id="lbFile" layoutX="159.0" layoutY="98.0" prefHeight="17.0" prefWidth="451.0" style="-fx-font-style: italic;" text="Proszę wczytać plik" />
-        <ListView fx:id="lstInfografiki" layoutX="59.0" layoutY="150.0" prefHeight="494.0" prefWidth="416.0" />
+        <ListView fx:id="lstInfografiki" layoutX="59.0" layoutY="150.0" prefHeight="440.0" prefWidth="416.0" />
+        <ImageView fx:id="imgMiniaturka" fitHeight="214.0" fitWidth="304.0" layoutX="482.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="488.0" layoutY="174.0" prefHeight="17.0" prefWidth="71.0" text="Miniaturka" />
+        <Button fx:id="btnPokazInfografike" layoutX="715.0" layoutY="421.0" mnemonicParsing="false" onAction="#setBtnPokazInfografike" prefHeight="25.0" prefWidth="71.0" text="Pokaż" />
+        <TextField fx:id="txtAdresStrony" layoutX="57.0" layoutY="635.0" prefHeight="25.0" prefWidth="573.0" />
+        <Button fx:id="btnPrzejdzDoStrony" layoutX="664.0" layoutY="635.0" mnemonicParsing="false" onAction="#setBtnPrzejdzDoStrony" prefHeight="25.0" prefWidth="71.0" text="Załaduj" />
+        <Label layoutX="59.0" layoutY="610.0" prefHeight="17.0" prefWidth="77.0" text="Adres strony" />
     </children>
 </AnchorPane>
